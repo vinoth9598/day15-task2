@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>User Form</title>
+        <link rel="stylesheet" href="./table.css" type="text/css">
+    </head>
+    <body>
+        <h1>Welcome To Spicy Foods</h1>
+        <h2>Enter Your Details and Order Now</h2>
+        <div class="Detail">
+            First Name : <input type="text" name="fname" id="fname" required>
+            Last Name  : <input type="text" name="lname" id="lname" required>
+            Address : <input type="text" name="address" id="address" required>
+            Pincode : <input type="text" name="pincode" id="pincode" required>
+            Gender : <select name="gender" id="gender" required>
+                    <option value="">--select--</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                     </select>
+            State : <input type="text" name="state" id="state" required>
+            Country : <input type="text" name="country" id="country" required>
+           
+
+            <p>Select menu list : <span class="output"> </span> </p>
+                
+            <h3>Menu Items</h3>
+            <div id="foods">
+                <div class="menu">
+                    <input type="checkbox" name="Tea" value="Tea" >
+                    <label for="Tea">Tea &#8377 10</label>
+                 
+                </div>
+                <div class="menu">
+                    <input type="checkbox" name="food" id="food" value="Coffee" >
+                    <label for="food">Coffee &#8377 10</label>
+                </div>
+                <div class="menu">
+                    <input type="checkbox" name="food" id="food" value="Ittly" >
+                    <label for="food">Ittly &#8377 10 </label> 
+                </div>
+                <div class="menu">
+                    <input type="checkbox" name="food" id="food" value="Dosa" >
+                    <label for="food">Dosa &#8377 20 </label> 
+                </div>
+                <div class="menu">
+                    <input type="checkbox" name="food" id="food" value="Puri" >
+                    <label for="food">puri &#8377 20 </label> 
+                </div>
+                 <div class="menu">
+                    <input type="checkbox" name="food" id="food" value="Pongal" >
+                    <label for="food">Pongal &#8377 25 </label> 
+                 </div>
+                <div class="menu">
+                    <input type="checkbox" name="food" id="food" value="Sappathi" >
+                    <label for="food">Sappathi &#8377 20 </label>
+                </div>
+                    
+            </div>
+                
+           <button id="submit"> submit order </button>
+            
+        </div>
+        
+        <button onclick="addHTMLTableRow();" class="add">Add Order</button>
+        
+        <button id="clear">Re-Order</button>
+
+        <div >
+            <table  id="tab" border="1">
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Address</th>
+                    <th>Pincode</th>
+                    <th>Gender</th>
+                    <th>State</th>
+                    <th>Country</th>
+                    <th>Food</th>
+                </tr>
+            </table>
+        </div>
+
+        
+    </body>
+    <script src="./Dom.js"></script>
+</html>

@@ -1,0 +1,75 @@
+body{
+    margin-top:5px;
+    margin-bottom:5px;
+    width:100%;
+    height:100%;
+    background-color:cadetblue;
+    overflow: scroll;
+}
+h1{
+    text-align: center;
+    color: crimson;
+}
+h2{
+    Padding:5px;
+    color: blue;
+}
+.Detail{
+    display: flex;
+    flex-direction: column;
+    width:50vw;
+    padding:20px;
+    color:black;
+    font-weight: bold;
+    
+}
+.Detail input{
+    border-color: cadetblue;
+    padding:5px;
+    width:15rem;
+    border-radius: 4px;
+}
+
+#gender{
+    padding:5px;
+    width:16rem;
+}
+
+.output{
+    padding:4px;
+    background-color:whitesmoke;
+    color:black;
+}
+.menu input{
+    width:20px;
+    margin:10px;
+}
+
+button {
+    margin:10px;
+    padding:3px;
+    text-align: center;
+    border-color: cadetblue;
+    border-radius: 4px;
+    background-color:rgb(10, 236, 236);
+    width:100px;
+    
+}
+button:hover{
+    color:red
+    
+}
+
+#tab{
+    background-color:rgb(230, 240, 240);
+    width:100%;
+    text-align: center;
+       
+}
+#tab th{
+    padding:5px;
+    text-align: center;
+    background-color: aliceblue;
+}
+
+
